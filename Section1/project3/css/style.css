@@ -101,7 +101,6 @@ h1 span:nth-child(8) {
 	animation-delay: 2.2s;
 }
 
-
 @keyframes rotate-heading {
 	from {
 		transform: rotateY(90deg);
@@ -112,5 +111,35 @@ h1 span:nth-child(8) {
 		transform: rotateY(0deg);
 		filter: blur(0);
 		opacity: 1;
+	}
+}
+
+.text {
+	position: absolute;
+	top: 111px;
+	left: 100px;
+	width: 600px;
+	height: 600px;
+	font-size: 36px;
+	color: #fff;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	overflow: hidden;
+}
+
+.text::before {
+	display: block;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	content: '01/01/2000';
+	animation: slide-text 1s 3s forwards;
+}
+
+@keyframes slide-text {
+	0% {
+		top: -60px;
+	}
+	100% {
+		top: 10px;
 	}
 }
