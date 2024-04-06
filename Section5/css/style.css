@@ -84,3 +84,61 @@ ul {
 		transform: rotate(0deg);
 	}
 }
+
+/* --------------------------- */
+
+.two:hover .dropdown li {
+	display: block;
+	animation: menu2 0.5s forwards;
+}
+
+@keyframes menu2 {
+	from {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* --------------------------- */
+
+.three:hover .dropdown li {
+	display: block;
+	animation: menu3 0.5s forwards;
+}
+
+@keyframes menu3 {
+	from {
+		opacity: 0;
+		transform: rotateY(-60deg) translateX(60px);
+	}
+
+	to {
+		opacity: 1;
+		transform: rotateY(0) translateX(0);
+	}
+}
+
+/* --------------------------- */
+
+.four:hover .dropdown li {
+	display: block;
+	animation: menu4 0.5s forwards;
+	transform-origin: top;
+}
+
+@keyframes menu4 {
+	from {
+		opacity: 0;
+		transform: scale(0.7) translateY(-40px);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
