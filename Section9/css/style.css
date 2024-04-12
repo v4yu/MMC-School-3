@@ -9,36 +9,74 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #333;
 }
 
-.card {
+.form {
   width: 400px;
-  background-color: #ddd;
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 2px solid #888888;
 }
-.card__img {
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+.form__title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  color: #888888;
+  font-weight: normal;
 }
-.card__body {
-  padding: 10px 20px;
-}
-.card__text {
-  padding: 20px 0;
-}
-.card__btns {
+.form__btns {
   display: flex;
   justify-content: space-around;
 }
-.card__btn {
+.form__btn {
+  width: 140px;
+  height: 45px;
   padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid #888888;
+  background-color: #fff;
+  color: #888888;
   cursor: pointer;
 }
-.card__btn--highlight {
-  background-color: rgb(33, 218, 132);
+.form__btn--highlight {
+  background-color: rgb(100, 142, 209);
+  color: #fff;
+}
+.form__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #888888;
+  font-size: 16px;
+}
+.form__input-box {
+  position: relative;
+  margin: 30px 0;
+}
+.form__label {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  transform: translateY(-50%);
+  color: #888888;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.form__box {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+}
+.form__box:focus {
+  outline: none;
+  border: 1px solid rgb(100, 142, 209);
 }/*# sourceMappingURL=style.css.map */
